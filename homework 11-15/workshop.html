@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+  <header><img src="images/header.jpg" alt="">
+  </header>
+
+  <a class="btn" data-popup-open="popup-1" href="#">
+      <i class="fa fa-plus-square" aria-hidden="true"></i>
+    </a>
+  
+ <div class="popup" data-popup="popup-1">
+     <div class="popup-inner">
+         <h2>Add more data</h2>
+
+            <form>
+                userId:<br>
+                <input type="number" id="firstId" name="firstId" value="1"><br>
+                id:<br>
+                <input type="number" id="id" name="id" value="1"><br>
+                title:<br>
+                <input type="text" id="title" name="title"><br>
+                body:<br>
+                <input type="text" id="body" name="body"><br>
+                <input id="btn-input" type="submit" value="Save">
+            </form>
+
+         <p><a data-popup-close="popup-1" href="#">Close</a></p>
+         <a class="popup-close" data-popup-close="popup-1" href="#">x</a>
+     </div>
+ </div>
+
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="Male"> Male
+  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="Female"> Female
+
+  <table class="table" id="result">
+  </table>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="scripts/Server.js"></script>
+<script src="scripts/data.js"></script>
+<script src=scripts/academy-table-filter.js></script>
+<script src="scripts/academy-table.js"></script>
+<script src="scripts/academy-events.js"></script>
+<script src="scripts/academy-pop-up.js"></script>
+</body>
+</html>
